@@ -110,6 +110,7 @@ height: 414px;
 .popular-products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
  
 }
 .product{
@@ -159,9 +160,14 @@ line-height: 150%;
 
 /* Creative Area */
 .form{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+}
+.form-title{
+    margin-left: 400px;
+    background-color: goldenrod;
 }
 form{
     margin-top: 100px;
@@ -248,4 +254,38 @@ line-height: 24px;
 line-height: 42px;
 text-align: center;
      }
+     .form{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+         
+     }
+     .form-title{
+         margin: 0;
+         padding-top: 60%;
+         background: none;
+     }
     }
+
+    /* Tablet Device */
+    @media (min-width:701px) and (max-width:992px){
+        header{
+            max-width: 992px ;
+            flex-wrap: wrap;
+        }
+        .popular-products,.creative{
+         grid-template-columns: 1fr 1fr;
+         row-gap:15px ;
+         align-items: center;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+     .logos{
+         display: none;
+     }
+     .form{
+         margin-right: 60%;
+     }
+}
