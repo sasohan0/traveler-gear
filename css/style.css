@@ -84,3 +84,14 @@ height: 475px;
     width: 440px;
 height: 414px;
 }
+
+/* LOGOS AREA */
+.logos{
+   
+    display: grid;
+   grid-template-columns: repeat(7,1fr);
+    margin: 100px 165px;
+
+}
+
+/* Popular Collection Area */
