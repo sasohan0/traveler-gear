@@ -73,6 +73,10 @@ header{
     font-size: 16px;
     letter-spacing: 1px;
 }
+.button-container:hover button{
+    background-color: tomato;
+    color: black;
+}
 
 .banner-image{
     
@@ -181,7 +185,8 @@ line-height: 150%;
 }
 .form-title{
     margin-left: 400px;
-    background-color: goldenrod;
+    background-image: linear-gradient(whitesmoke,white,whitesmoke,rgba(255, 99, 71, 0.479));
+    border-radius: 5px;
 }
 form{
     margin-top: 100px;
@@ -195,8 +200,12 @@ form{
 .field{
     padding: 10px 30px;
     margin-bottom: 10px;
+     background-image: linear-gradient(whitesmoke,white,whitesmoke,tomato);
+    border: none;
+     border-radius: 5px;
     
 }
+
 
 /* FOOTER AREA */
 footer{
@@ -278,6 +287,7 @@ text-align: center;
          align-items: flex-start;
          
      }
+     
      .form-title{
          margin: 0;
          padding-top: 60%;
