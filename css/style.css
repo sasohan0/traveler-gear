@@ -1,0 +1,86 @@
+/* FONTS IMPORTED */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 87px 120px 0 120px;
+}
+
+.navigation li{
+    
+    list-style: none;
+    
+    
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    margin: 35px;
+    font-size: 16px;
+}
+.navigation ul{
+    display: flex;
+    
+}
+
+/* Banner area styles */
+
+.container{
+    margin: 0 auto;
+    padding: 0 120px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 133px;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.banner-text h1{
+    font-size: 52px;
+    line-height: 70px;
+    padding-bottom: 16px;
+}
+.banner-text p{
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+}
+.primary-button{
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: white;
+    border-radius: 41px;
+    border: none;
+    font: inherit;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.banner-image{
+   background-image: url("../images/Circle\ design.svg");
+   background-repeat: no-repeat;
+
+   width: 475px;
+height: 475px;
+
+}
+.banner-image img{
+    width: 440px;
+height: 414px;
+}
