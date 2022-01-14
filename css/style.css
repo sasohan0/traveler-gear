@@ -76,6 +76,8 @@ header{
 .button-container:hover button{
     background-color: tomato;
     color: black;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
 }
 
 .banner-image{
