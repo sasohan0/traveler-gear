@@ -73,7 +73,9 @@ header{
     font-size: 16px;
     letter-spacing: 1px;
 }
+
 .banner-image{
+    
    background-image: url("../images/Circle\ design.svg");
    background-repeat: no-repeat;
 
@@ -84,6 +86,10 @@ height: 475px;
 .banner-image img{
     width: 440px;
 height: 414px;
+}
+.banner-image:hover img{
+    transform: rotate(720deg);
+    transition: transform 2s ease-in-out;
 }
 
 /* LOGOS AREA */
@@ -119,10 +125,18 @@ height: 414px;
     display: flex;
     flex-direction: column;
     padding: 17px 15px;
-    
+    overflow: hidden;
     background: #FFFFFF;
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.product-image{
+    overflow: hidden;
+}
+.product:hover img{
+    transform: scale(1.28);
+    transition: transform 0.7s ease-in-out;
+    
 }
 .product-title{
     font-weight: 500;
@@ -154,8 +168,8 @@ line-height: 150%;
     
 }
 .see-more{
-    padding-top: 80px;
-    text-align: end;
+    position: relative;
+    left: 290%;
 }
 
 /* Creative Area */
@@ -254,6 +268,9 @@ line-height: 24px;
 line-height: 42px;
 text-align: center;
      }
+     .see-more{
+         position: static;
+     }
      .form{
          display: flex;
          flex-direction: column;
@@ -284,6 +301,9 @@ text-align: center;
     }
      .logos{
          display: none;
+     }
+      .see-more{
+         position: static;
      }
      .form{
          margin-right: 60%;
