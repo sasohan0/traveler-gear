@@ -110,8 +110,7 @@ height: 414px;
 .popular-products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 1047px;
-height: 1662px;
+ 
 }
 .product{
     width: 329px;
@@ -159,38 +158,24 @@ line-height: 150%;
 }
 
 /* Creative Area */
-
-.creative{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 600px;
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.creative-image{
-    width: 404px;
-height: 270px;
-}
-.creative-image img{
-    width: 200%;
-}
-.creative-text{
-    padding-top: 200px;
+form{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 610px;
-height: 224px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
-.creative-title{
-    padding-bottom: 16px;
-    font-weight: bold;
-font-size: 38px;
-line-height: 60px;
-}
-.creative-paragraph{
-   
-    padding-bottom: 16px;
-   flex-wrap: wrap;
+.field{
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    
 }
 
 /* FOOTER AREA */
@@ -202,10 +187,65 @@ footer{
     background: #0A0826;
     color: white;
     
-height: 239px;
+
 }
 footer p{
     font-size: 14px;
 line-height: 24px;
 }
+
+   /* MEDIA QUERY AREA */
+/* Mobile device */
+ @media (max-width:700px){
+     main{
+         overflow: hidden;
+     }
+    .navigation ul{
+        display: block;
+    }
+    header{
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .head-title{
+        padding-left: 18%;
+    }
+     .logos{
+         display: none;
+     }
+     
     
+     .banner,.popular-products,.creative{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         row-gap:15px ;
+         
+         
+     }
+     .banner-image{
+         display: flex;
+         justify-content: center;
+     }
+     .banner-image img{
+         max-width: 350px;
+         max-height: 350px;
+         
+     }
+     .banner-text{
+         order: 2;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+     .banner-text h1{
+         font-size: 28px;
+line-height: 42px;
+text-align: center;
+     }
+    }
