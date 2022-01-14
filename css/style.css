@@ -176,8 +176,12 @@ line-height: 150%;
 .see-more{
     position: relative;
     left: 290%;
+   
 }
-
+.see-more a{
+     text-decoration: none;
+    color: #E02C6D;
+}
 /* Creative Area */
 .form{
     display: grid;
