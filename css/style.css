@@ -1,5 +1,9 @@
+
 /* FONTS IMPORTED */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/* COMMON STYLES */
 
 *{
     margin: 0;
@@ -10,6 +14,9 @@ body{
     font-family: 'Bebas Neue', cursive;
 font-family: 'Poppins', sans-serif;
 }
+
+/* HEADER STYLES */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -101,6 +108,7 @@ height: 414px;
 }
 
 /* LOGOS AREA */
+
 .logos{
    
     display: grid;
@@ -184,7 +192,9 @@ line-height: 150%;
      text-decoration: none;
     color: #E02C6D;
 }
-/* Creative Area */
+
+/* Creative Area FORM AREA */
+
 .form{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -216,6 +226,7 @@ form{
 
 
 /* FOOTER AREA */
+
 footer{
     display: flex;
     flex-direction: column;
@@ -236,6 +247,7 @@ font-weight: 300;
 
    
 /* Mobile device */
+
  @media (max-width:647px){
      main{
          overflow: hidden;
@@ -332,6 +344,7 @@ line-height: 24px;
     }
 
     /* Tablet Device and Mini Desktops*/
+
     @media (min-width:648px) and (max-width:1075px){
         main{
             overflow: hidden;
@@ -366,7 +379,9 @@ line-height: 24px;
          margin-right: 60%;
      }
 }
+
 /* OVERFLOX FIXED */
+
 @media (min-width:1076px){
     main{overflow: hidden;}
 }
